@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dussaillant Flavie | Portfolio | Site Cinéma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="index1.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="top">
+            <p class="header">Dussaillant Flavie </br>Portfolio</p>
+
+            <div class="lien">
+                <a href="index1.html"><i class="fas fa-pen"></i> Work</a>
+                <a href="apropos.html"><i class="fas fa-user"></i> À propos</a>
+                <a href="http://www.linkedin.com/in/flavie-dussaillant-998066182"><i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+        </div>
+        <div class="titre">
+            <h1>Site Cinéma le Festival de Bègles</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <h2>Projet de refonte du site du cinéma. Site HTML</h2>
+        <div class="partie">
+            <div class="explication">
+                <div class="textresume">
+                    <p> Nous avons effectué la refonte du site : Cinéma le Festival de Bègles. Nous avons d'abord réalisé une maquette, avec Adobe XD, afin de revoir l'ensemble du design du site. Nous avons recréer le logo, changer les polices...Nous voulions
+                        moderniser le site et le rendre pus attrayant.
+                        </br>Nous avons ensuite réalisé la partie développement web en mettant en forme la maquette avec du HTML, CSS et JavaScript. Nous avons implémenté le site de plusieurs animations, notamment des hovers, que je vous invite à découvrir
+                        en allant cliquer sur les boutons ci dessous. Nous avons également effectué un montage vidéo avec des bandes d'annonce afin de l'uitliser comme support de fond lors de l'entrée sur le site.</p>
+
+                </div>
+                <div class="bouton">
+                    <button id="btnPopup" class="btnPopup">Afficher la banner</button>
+                    <div id="overlay1" class="overlay1">
+                        <div id="popup" class="popup">
+                            <h3>Banner du site <span id="btnClose" class="btnClose">&times;</span></h3>
+                            <div class="videocinema">
+                                <video autoplay class='fullscreen-video' loop muted playsinline>
+                        <source src='image/bandeannonce.mp4' type='video/mp4'>
+                    </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="btnPopup2" class="btnPopup">Afficher un hover</button>
+                    <div id="overlay2" class="overlay1">
+                        <div id="popup2" class="popup">
+                            <h3>Hover <span id="btnClose2" class="btnClose">&times;</span></h3>
+                            <div class="videocinema">
+                                <video autoplay class='fullscreen-video' loop muted playsinline>
+                        <source src='image/filmaffiche.mp4' type='video/mp4'>
+                    </video>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnPopup3" class="btnPopup">Afficher un hover</button>
+                    <div id="overlay3" class="overlay1">
+                        <div id="popup3" class="popup">
+                            <h3>Hover <span id="btnClose3" class="btnClose">&times;</span></h3>
+                            <div class="videocinema">
+                                <video autoplay class='fullscreen-video' loop muted playsinline>
+                        <source src='image/timburton.mp4' type='video/mp4'>
+                    </video>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <script type="text/javascript">
+                        var bntPopup = document.getElementById('bntPopup');
+                        var overlay1 = document.getElementById('overlay1');
+                        var bntClose = document.getElementById('btnClose');
+                        var bntPopup2 = document.getElementById('bntPopup2');
+                        var overlay2 = document.getElementById('overlay2');
+                        var bntClose2 = document.getElementById('btnClose2');
+                        var bntPopup3 = document.getElementById('bntPopup3');
+                        var overlay3 = document.getElementById('overlay3');
+                        var bntClose3 = document.getElementById('btnClose3');
+
+                        btnPopup.onclick = openModal;
+                        btnClose.onclick = closePopup;
+                        btnPopup2.onclick = openModal2;
+                        btnClose2.onclick = closePopup2;
+                        btnPopup3.onclick = openModal3;
+                        btnClose3.onclick = closePopup3;
+
+                        function openModal() {
+                            overlay1.style.display = 'block';
+                        }
+
+                        function closePopup() {
+                            overlay1.style.display = 'none';
+                        }
+
+                        function openModal2() {
+                            overlay2.style.display = 'block';
+                        }
+
+                        function closePopup2() {
+                            overlay2.style.display = 'none';
+                        }
+
+                        function openModal3() {
+                            overlay3.style.display = 'block';
+                        }
+
+                        function closePopup3() {
+                            overlay3.style.display = 'none';
+                        }
+                    </script>
+                </div>
+            </div>
+            <img class="image" src="image/ordimaquette.jpg" />
+        </div>
+
+
+
+        <div class="site">
+
+            <div class="siteweb">
+                <img class="image11" src="capturesite/sitecinema.png" />
+                <img class="image12" src="capturesite/siteprogrammation.png" />
+                <img class="image13" src="capturesite/siteinfopratique.png" />
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
