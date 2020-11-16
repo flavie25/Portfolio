@@ -6,13 +6,17 @@ body {
     background-color: #E5E7E9;
 }
 
-
-/*header*/
+main {
+    margin: 0px;
+}
 
 header {
     margin: 0;
     left: 0;
 }
+
+
+/*header*/
 
 i {
     color: #1F618D;
@@ -82,9 +86,19 @@ a h2:hover {
     color: purple;
 }
 
-main {
-    margin: 0px;
+.textexplicatif {
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px 50px 10px;
 }
+
+.textexplicatif p {
+    text-align: justify;
+    width: 950px;
+}
+
+
+/*Index*/
 
 .container {
     display: flex;
@@ -100,132 +114,8 @@ main {
     display: block;
 }
 
-.site {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-.accueil {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.accueil p {
-    margin-left: 50px;
-    width: 700px;
-}
-
-.videocinema {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.fullscreen-video {
-    width: 1000px;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-}
-
-.image6 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.image2 {
-    width: 1000px;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-}
-
-.image4 {
-    width: 700px;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-}
-
-.image7 {
-    display: flex;
-    justify-content: space-around;
-    margin: 100px 70px 0px 70px;
-}
-
-.maquette {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.imagemaquette {
-    width: 1200px;
-    height: 100%;
-}
-
-.imagemaquette1 {
-    width: 400px;
-    height: 100%;
-}
-
-.imagemaquette1:hover {
-    background-image: url(image/accueilweb.png);
-    width: 400px;
-    height: 100%;
-}
-
-.imagemaquette-phone {
-    width: 250px;
-    height: 100%;
-}
-
-.image9 {
-    width: 400px;
-    height: 3000px;
-}
-
-.image1 {
-    width: 400px;
-    height: 250px;
-}
-
-
-/* Apparition overlay sur passage souris */
-
-.presentation {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    margin: 100px 70px 0 70px;
-}
-
-.presentationtext {
-    width: 700px;
-    margin-top: 50px;
-}
-
-.presentationimage {
-    width: 600px;
-    height: 450px;
-    object-fit: contain;
-    margin: 10px 50px 10px 50px;
-}
-
-.presentation p {
-    text-align: justify;
-}
-
-
-/*Effet sur image*/
+/* Index Hover : Effet sur image*/
 
 .element {
     position: relative;
@@ -264,6 +154,138 @@ main {
 
 .element:hover .text {
     opacity: 1;
+}
+
+
+/*Site Cinéma*/
+
+.partie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.explication {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 600px;
+}
+
+.textresume {
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px 50px 10px;
+}
+
+.textresume p {
+    text-align: justify;
+    width: 800px;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.siteweb {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+
+.image11 {
+    margin-top: 10px;
+    width: 500px;
+    height: 1700px;
+}
+
+.image12 {
+    margin-top: 10px;
+    width: 500px;
+    height: 2000px;
+}
+
+.image13 {
+    margin-top: 10px;
+    width: 500px;
+    height: 700px;
+}
+
+
+/*Cover d'album*/
+
+.image4 {
+    width: 600px;
+    height: 400px;
+    margin-top: 15px;
+    padding: 0;
+    object-fit: contain;
+}
+
+.image7 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: ;
+    justify-content: space-around;
+    margin: 100px 30px 10pxpx 30px;
+}
+
+
+/*A propos*/
+
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 100px 70px 0 70px;
+}
+
+.presentationtext {
+    width: 700px;
+    margin-top: 50px;
+}
+
+.presentationimage {
+    width: 600px;
+    height: 450px;
+    object-fit: contain;
+    margin: 10px 50px 10px 50px;
+}
+
+.presentation p {
+    text-align: justify;
+}
+
+
+/*Site de voyage*/
+
+.image14 {
+    margin-top: 10px;
+    width: 550px;
+    height: 100%;
+}
+
+
+/*Vidéos*/
+
+.videocinema {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fullscreen-video {
+    width: 1000px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
 }
 
 
@@ -310,75 +332,8 @@ main {
     cursor: pointer;
 }
 
-.image11 {
-    margin-top: 10px;
-    width: 500px;
-    height: 1700px;
-}
-
-.image12 {
-    margin-top: 10px;
-    width: 500px;
-    height: 2000px;
-}
-
-.image13 {
-    margin-top: 10px;
-    width: 500px;
-    height: 700px;
-}
-
-.image14 {
-    margin-top: 10px;
-    width: 550px;
-    height: 100%;
-}
-
-.siteweb {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    justify-content: space-around;
-}
-
 .bouton {
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
-}
-
-.explication {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 600px;
-}
-
-.textresume {
-    display: flex;
-    justify-content: center;
-    margin: 50px 10px 50px 10px;
-}
-
-.textresume p {
-    text-align: justify;
-    width: 800px;
-}
-
-.partie {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.textresume2 {
-    display: flex;
-    justify-content: center;
-    margin: 50px 10px 50px 10px;
-}
-
-.textresume2 p {
-    text-align: justify;
-    width: 950px;
 }
