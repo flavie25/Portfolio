@@ -111,7 +111,6 @@ a h2:hover {
     width: 650px;
     height: 460px;
     transition: 0.5s ease;
-    display: block;
 }
 
 
@@ -165,32 +164,6 @@ a h2:hover {
     justify-content: space-around;
 }
 
-.explication {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 600px;
-}
-
-.textresume {
-    display: flex;
-    justify-content: center;
-    margin: 50px 10px 50px 10px;
-}
-
-.textresume p {
-    text-align: justify;
-    width: 800px;
-}
-
-.site {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .siteweb {
     display: flex;
     flex-wrap: wrap;
@@ -217,9 +190,18 @@ a h2:hover {
 }
 
 
+/*Site de voyage*/
+
+.image14 {
+    margin-top: 10px;
+    width: 550px;
+    height: 100%;
+}
+
+
 /*Cover d'album*/
 
-.image4 {
+.imagecover {
     width: 600px;
     height: 400px;
     margin-top: 15px;
@@ -227,7 +209,7 @@ a h2:hover {
     object-fit: contain;
 }
 
-.image7 {
+.containercover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: ;
@@ -260,15 +242,6 @@ a h2:hover {
 
 .presentation p {
     text-align: justify;
-}
-
-
-/*Site de voyage*/
-
-.image14 {
-    margin-top: 10px;
-    width: 550px;
-    height: 100%;
 }
 
 
@@ -335,5 +308,6 @@ a h2:hover {
 .bouton {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
