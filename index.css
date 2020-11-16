@@ -224,6 +224,7 @@ p {
     width: 600px;
     height: 450px;
     object-fit: contain;
+    margin: 10px 50px 10px 50px;
 }
 
 .presentation p {
