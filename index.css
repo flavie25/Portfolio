@@ -14,22 +14,15 @@ header {
     left: 0;
 }
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 i {
     color: #1F618D;
 }
 
-
-/*.top {
+.top {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}*/
+    flex-wrap: column;
+}
 
 p.headertext {
     margin: 0;
@@ -53,6 +46,8 @@ p.headertext {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+.titre {}
 
 
 /*Text*/
