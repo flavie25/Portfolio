@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
 body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: #E5E7E9;
+    background-color: rgb(211, 247, 255);
 }
 
 main {
@@ -19,18 +19,22 @@ header {
 /*header*/
 
 i {
-    color: #1F618D;
+    color: rgb(185, 250, 255);
 }
 
 .top {
     display: flex;
     justify-content: space-between;
     flex-wrap: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
 }
 
 p.headertext {
     margin: 0;
-    color: #1F618D;
+    color: rgb(185, 250, 255);
     font-size: 1.2em;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
@@ -48,21 +52,27 @@ p.headertext {
 
 .menu a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(185, 250, 255);
 }
 
-.titre {}
+.titre {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 /*Text*/
 
 h1 {
-    margin-top: 100px;
     text-align: center;
-    color: black;
-    font-size: 3em;
+    color: white;
+    font-size: 2.5em;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
+    margin: 0px 0px 5px 0px;
 }
 
 h2 {
@@ -110,7 +120,6 @@ a h2:hover {
 .image {
     width: 650px;
     height: 460px;
-    transition: 0.5s ease;
 }
 
 
@@ -126,7 +135,7 @@ a h2:hover {
 .overlay {
     position: absolute;
     transition: 0.5s;
-    background-color: rgb(31, 97, 141, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     bottom: 0;
@@ -174,19 +183,12 @@ a h2:hover {
 .image11 {
     margin-top: 10px;
     width: 500px;
-    height: 1700px;
+    height: 100%;
 }
 
 .image12 {
-    margin-top: 10px;
-    width: 500px;
-    height: 2000px;
-}
-
-.image13 {
-    margin-top: 10px;
-    width: 500px;
-    height: 700px;
+    width: 550px;
+    height: 360px;
 }
 
 
@@ -214,7 +216,7 @@ a h2:hover {
     flex-wrap: wrap;
     flex-direction: ;
     justify-content: space-around;
-    margin: 100px 30px 10pxpx 30px;
+    margin: 100px 30px 10px 30px;
 }
 
 
@@ -271,10 +273,12 @@ a h2:hover {
     font-family: 'Roboto Mono', monospace;
     color: white;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .btnPopup:hover {
     background-color: teal;
+    border-radius: 15px;
 }
 
 .overlay1 {
@@ -310,4 +314,3 @@ a h2:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
