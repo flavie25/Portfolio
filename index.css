@@ -70,6 +70,7 @@ p.headertext {
     display: flex;
     justify-content: space-around;
     height: auto;
+    width: 100%;
     border-top: none;
     background-color: rgba(0, 0, 0, 0.8);
 }
