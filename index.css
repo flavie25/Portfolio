@@ -51,7 +51,7 @@
             .menu {
                 display: flex;
                 justify-content: space-around;
-                width: auto;
+                width: 25%;
                 text-align: right;
                 font-family: 'Roboto Mono', monospace;
                 font-weight: 300;
@@ -365,6 +365,9 @@
                     margin-top: 80px;
                     width: 90%;
                 }
+                .menu {
+                    width: 25%;
+                }
             }
             /*Version téléphone */
             
@@ -423,9 +426,12 @@
                     margin: 20px 10px 0 10px;
                 }
                 p.headertext {
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                 }
                 .menu a {
                     font-size: 1em;
+                }
+                .menu {
+                    width: 100%;
                 }
             }
