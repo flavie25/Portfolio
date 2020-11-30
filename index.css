@@ -49,7 +49,7 @@
         .menu {
             display: flex;
             justify-content: space-around;
-            width: 350px;
+            width: auto;
             text-align: right;
             font-family: 'Roboto Mono', monospace;
             font-weight: 300;
@@ -60,6 +60,7 @@
         .menu a {
             text-decoration: none;
             color: rgb(185, 250, 255);
+            margin: 0px 5px 0px 5px;
         }
         
         .titre {
@@ -111,12 +112,13 @@
         .textexplicatif {
             display: flex;
             justify-content: center;
+            width: auto;
             margin: 50px 10px 50px 10px;
         }
         
         .textexplicatif p {
             text-align: center;
-            width: 950px;
+            width: 60%;
         }
         /*Index*/
         
@@ -179,11 +181,12 @@
         .element:hover .text {
             opacity: 1;
         }
-        /*Site Cinéma*/
+        /*Site Cinéma et Voyage*/
         
         .partie {
             display: flex;
             flex-wrap: wrap;
+            width: auto;
             justify-content: space-around;
         }
         
@@ -196,7 +199,7 @@
         
         .image11 {
             margin-top: 10px;
-            width: 500px;
+            width: 30%;
             height: 100%;
         }
         
@@ -204,13 +207,6 @@
             margin-top: 20px;
             width: 550px;
             height: 360px;
-        }
-        /*Site de voyage*/
-        
-        .image14 {
-            margin-top: 10px;
-            width: 550px;
-            height: 100%;
         }
         /*Cover d'album*/
         
@@ -278,6 +274,7 @@
             color: white;
             cursor: pointer;
             border: 0;
+            margin: 5px;
         }
         
         .btnPopup:hover {
@@ -317,6 +314,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            width: 80%;
+            margin: auto;
         }
         /*Version tablette */
         
@@ -326,6 +325,9 @@
             }
             h2 {
                 font-size: 1em;
+            }
+            .textexplicatif p {
+                width: 70%;
             }
         }
         /*Version téléphone */
@@ -343,5 +345,24 @@
             }
             h2 {
                 font-size: 1em;
+            }
+            .wrapper {
+                margin: 80px 40px 40px 40px;
+            }
+            .textexplicatif p {
+                width: 100%;
+            }
+            .bouton {
+                width: 90%;
+            }
+            .siteweb {
+                flex-direction: column;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+            }
+            .image11 {
+                width: 90%;
+                height: 100%;
             }
         }
