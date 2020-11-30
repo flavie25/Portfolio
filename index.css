@@ -368,6 +368,7 @@
             @media all and (max-width:800px) {
                 .wrapper {
                     flex-direction: column;
+                    width: 90%;
                 }
                 .container1 {
                     width: 100%;
