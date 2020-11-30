@@ -400,4 +400,8 @@
                     object-fit: contain;
                     margin: 10px;
                 }
+                .presentationtext {
+                    width: 90%;
+                    margin-top: 10px;
+                }
             }
