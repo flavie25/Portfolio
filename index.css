@@ -243,6 +243,7 @@
             
             .presentation p {
                 text-align: left;
+                font-size: 1.2em;
             }
             /*Vidéos*/
             
@@ -337,7 +338,7 @@
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
-                    margin: 70px 10px 0 10px;
+                    margin: 60px 10px 0 10px;
                 }
                 .presentationtext {
                     width: 90%;
@@ -348,6 +349,9 @@
                     height: auto;
                     object-fit: contain;
                     margin: 10px;
+                }
+                .presentation p {
+                    font-size: 1em;
                 }
             }
             /*Version téléphone */
@@ -402,6 +406,8 @@
                 }
                 .presentationtext {
                     width: 90%;
-                    margin-top: 10px;
+                }
+                .presentation {
+                    margin: 20px 10px 0 10px;
                 }
             }
