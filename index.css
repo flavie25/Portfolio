@@ -3,9 +3,9 @@
 /*src7*/
 
 body {
-    width: 100%;
-    height: 100%;
     margin: 0;
+    right: 0;
+    width: auto;
     background-color: rgb(211, 247, 255);
 }
 
@@ -36,7 +36,6 @@ i.fab.fa-youtube {
     flex-wrap: column;
     background-color: rgba(0, 0, 0, 0.8);
     height: auto;
-    width: 100%;
     padding: 10px 10px 10px 10px;
     margin: 0;
 }
@@ -68,10 +67,10 @@ p.headertext {
 
 .titre {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: 100%;
-    border-top: none;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
