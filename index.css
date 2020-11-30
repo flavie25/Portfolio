@@ -57,12 +57,11 @@
                 font-weight: 300;
             }
             
-            .menu:first-child {}
-            
             .menu a {
                 text-decoration: none;
                 color: rgb(185, 250, 255);
                 margin: 0px 5px 0px 5px;
+                font-size: 1.2em;
             }
             
             .titre {
@@ -140,6 +139,7 @@
             
             .image {
                 object-fit: contain;
+                margin: 0;
                 width: 100%;
                 height: 100%;
             }
@@ -423,6 +423,9 @@
                     margin: 20px 10px 0 10px;
                 }
                 p.headertext {
+                    font-size: 1em;
+                }
+                .menu a {
                     font-size: 1em;
                 }
             }
