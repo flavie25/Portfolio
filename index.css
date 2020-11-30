@@ -29,16 +29,6 @@
                 color: black;
             }
             
-            .top {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: column;
-                background-color: rgba(0, 0, 0, 0.8);
-                height: auto;
-                padding: 10px 10px 10px 10px;
-                margin: 0;
-            }
-            
             p.headertext {
                 margin: 0;
                 color: rgb(185, 250, 255);
@@ -50,8 +40,11 @@
             
             .menu {
                 display: flex;
-                justify-content: space-evenly;
-                width: 30%;
+                justify-content: space-around;
+                background-color: rgba(0, 0, 0, 0.8);
+                width: 100%;
+                height: auto;
+                left: 0;
                 text-align: right;
                 font-family: 'Roboto Mono', monospace;
                 font-weight: 300;
@@ -60,7 +53,7 @@
             .menu a {
                 text-decoration: none;
                 color: rgb(185, 250, 255);
-                margin: 0px 5px 0px 5px;
+                margin: 5px 5px 0px 5px;
                 font-size: 1.2em;
             }
             
@@ -80,7 +73,7 @@
                 font-size: 2.5em;
                 font-family: 'Roboto Mono', monospace;
                 font-weight: 500;
-                margin: 0px 0px 20px 0px;
+                margin: 20px 0px 20px 0px;
             }
             
             h2 {
@@ -111,7 +104,7 @@
                 display: flex;
                 justify-content: center;
                 width: auto;
-                margin: 50px 10px 50px 10px;
+                margin: 50px 15px 50px 15px;
             }
             
             .textexplicatif p {
@@ -362,9 +355,6 @@
                     margin-top: 80px;
                     width: 90%;
                 }
-                .menu {
-                    width: 50%;
-                }
                 .bouton {
                     width: 80%;
                 }
@@ -440,8 +430,5 @@
                 }
                 .menu a {
                     font-size: 0.9em;
-                }
-                .menu {
-                    width: 100%;
                 }
             }
