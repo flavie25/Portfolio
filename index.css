@@ -126,7 +126,9 @@
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                margin: 100px 60px 60px 60px;
+                margin: auto;
+                margin-top: 100px;
+                width: 80%;
             }
             
             .container1 {
@@ -215,7 +217,7 @@
             .containercover {
                 display: flex;
                 flex-wrap: wrap;
-                width: 100%;
+                width: auto;
                 justify-content: space-around;
                 margin: 100px 30px 10px 30px;
             }
@@ -352,6 +354,10 @@
                 }
                 .presentation p {
                     font-size: 1em;
+                }
+                .wrapper {
+                    margin-top: 80px;
+                    width: 80%;
                 }
             }
             /*Version téléphone */
