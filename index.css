@@ -359,6 +359,7 @@
                     font-size: 1em;
                 }
                 .wrapper {
+                    margin: auto;
                     margin-top: 80px;
                     width: 90%;
                 }
