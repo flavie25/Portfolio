@@ -380,7 +380,7 @@
                     height: auto;
                 }
                 h1 {
-                    font-size: 1.5em;
+                    font-size: 1.3em;
                 }
                 h2 {
                     font-size: 1em;
@@ -426,6 +426,6 @@
                     font-size: 0.8em;
                 }
                 .menu a {
-                    font-size: 0.9em;
+                    font-size: 1em;
                 }
             }
