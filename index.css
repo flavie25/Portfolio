@@ -107,10 +107,6 @@
                 color: black;
             }
             
-            a h2:hover {
-                color: purple;
-            }
-            
             .textexplicatif {
                 display: flex;
                 justify-content: center;
@@ -272,18 +268,18 @@
             /*Bouton Popup*/
             
             .btnPopup {
-                background-color: #1F618D;
+                background: none;
+                border: 1px solid black;
                 padding: 1em 1em;
                 font-size: 1em;
                 font-family: 'Roboto Mono', monospace;
-                color: white;
+                color: black;
                 cursor: pointer;
-                border: 0;
                 margin: 5px;
             }
             
             .btnPopup:hover {
-                background-color: teal;
+                background-color: #65c3ca;
             }
             
             .overlay1 {
@@ -304,7 +300,6 @@
             
             .popup {
                 margin: 5% auto;
-                width: 100%;
                 height: auto;
                 background-color: rgba(255, 255, 255, 0.9);
                 color: black;
@@ -392,11 +387,14 @@
                 p {
                     font-size: 0.7em;
                 }
+                .textexplicatif {
+                    margin: auto;
+                }
                 .textexplicatif p {
                     width: 100%;
                 }
                 .bouton {
-                    width: 90%;
+                    width: 100%;
                 }
                 .siteweb {
                     flex-direction: column;
