@@ -327,6 +327,9 @@
                     font-size: 2em;
                 }
                 h2 {
+                    font-size: 1.2em;
+                }
+                .text {
                     font-size: 1em;
                 }
                 .textexplicatif p {
@@ -357,7 +360,7 @@
                 }
                 .wrapper {
                     margin-top: 80px;
-                    width: 80%;
+                    width: 90%;
                 }
             }
             /*Version téléphone */
@@ -415,5 +418,8 @@
                 }
                 .presentation {
                     margin: 20px 10px 0 10px;
+                }
+                p.headertext {
+                    font-size: 1em;
                 }
             }
