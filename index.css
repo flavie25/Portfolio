@@ -37,6 +37,7 @@
                 height: auto;
                 padding: 10px 10px 10px 10px;
                 margin: 0;
+                width: 100%;
             }
             
             p.headertext {
@@ -50,7 +51,7 @@
             
             .menu {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 width: 30%;
                 text-align: right;
                 font-family: 'Roboto Mono', monospace;
