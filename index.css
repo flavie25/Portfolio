@@ -266,13 +266,32 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30%;
     height: 70%;
     margin: auto;
     margin-bottom: 20px;
 }
 
 .fullscreen-video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+.videocinema1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.fullscreen-video1 {
     width: 100%;
     height: auto;
     margin: 0;
@@ -404,6 +423,13 @@ a {
     .bouton {
         width: 80%;
     }
+    .videocinema {
+        width: 60%;
+        height: 70%;
+    }
+    .partie {
+        flex-direction: column;
+    }
 }
 
 
@@ -481,5 +507,9 @@ a {
     }
     .lien a {
         font-size: 0.9em;
+    }
+    .videocinema {
+        width: 80%;
+        height: 70%;
     }
 }
