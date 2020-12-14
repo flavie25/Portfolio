@@ -273,7 +273,7 @@ a {
 }
 
 .fullscreen-video {
-    width: 50%;
+    width: 100%;
     height: auto;
     padding: 0;
     object-fit: contain;
