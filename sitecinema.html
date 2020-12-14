@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dussaillant Flavie | Portfolio | Site Cinéma</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="index.css">
 
 </head>
@@ -39,28 +40,32 @@
                     cliquer sur les boutons ci-dessous. Nous avons également effectué un montage vidéo avec des bandes d'annonce afin de l'utiliser comme support de fond lors de l'entrée sur le site.</p>
 
             </div>
-            <div class="videocinema">
-                <video autoplay class='fullscreen-video' loop muted playsinline>
-                        <source src='image/bandeannonce.mp4' type='video/mp4'>
-                     </video>
+
+            <div class="my-slider">
+    
+              
+                    <div class="videocinema">
+                        <video autoplay class='fullscreen-video' loop muted playsinline>
+                                <source src='image/bandeannonce.mp4' type='video/mp4'>
+                             </video>
+                    </div>      
+                
+               
+                    <div class="videocinema">
+                        <video autoplay class='fullscreen-video' loop muted playsinline>
+                                <source src='image/filmaffiche1.mp4' type='video/mp4'>
+                            </video>
+        
+                     </div>     
+         
+              
+                    <div class="videocinema">
+                        <video autoplay class='fullscreen-video' loop muted playsinline>
+                                <source src='image/timburton.mp4' type='video/mp4'>
+                            </video>
+                    </div>      
+            
             </div>
-
-            <div class="videocinema">
-                <video autoplay class='fullscreen-video' loop muted playsinline>
-                        <source src='image/filmaffiche1.mp4' type='video/mp4'>
-                    </video>
-
-            </div>
-
-            <div class="videocinema">
-                <video autoplay class='fullscreen-video' loop muted playsinline>
-                        <source src='image/timburton.mp4' type='video/mp4'>
-                    </video>
-            </div>
-
-
-
-
         </div>
 
 
@@ -90,47 +95,17 @@
 
     </footer>
 
-    <script type="text/javascript">
-        var bntPopup = document.getElementById('bntPopup');
-        var overlay1 = document.getElementById('overlay1');
-        var bntClose = document.getElementById('btnClose');
-        var bntPopup2 = document.getElementById('bntPopup2');
-        var overlay2 = document.getElementById('overlay2');
-        var bntClose2 = document.getElementById('btnClose2');
-        var bntPopup3 = document.getElementById('bntPopup3');
-        var overlay3 = document.getElementById('overlay3');
-        var bntClose3 = document.getElementById('btnClose3');
-
-        btnPopup.onclick = openModal;
-        btnClose.onclick = closePopup;
-        btnPopup2.onclick = openModal2;
-        btnClose2.onclick = closePopup2;
-        btnPopup3.onclick = openModal3;
-        btnClose3.onclick = closePopup3;
-
-        function openModal() {
-            overlay1.style.display = 'block';
-        }
-
-        function closePopup() {
-            overlay1.style.display = 'none';
-        }
-
-        function openModal2() {
-            overlay2.style.display = 'block';
-        }
-
-        function closePopup2() {
-            overlay2.style.display = 'none';
-        }
-
-        function openModal3() {
-            overlay3.style.display = 'block';
-        }
-
-        function closePopup3() {
-            overlay3.style.display = 'none';
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  
+    <script>    
+      var slider = tns({
+        container: ".my-slider",
+        items: 1,
+        nextButton: 'suivant',
+        controlsPosition: 'bottom',
+        navPosition: 'bottom',
+        controlsText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],  
+      });
     </script>
 
 </body>

@@ -124,7 +124,7 @@ a {
 
 .wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: auto;
     margin-top: 100px;
@@ -273,11 +273,13 @@ a {
 }
 
 .fullscreen-video {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 0;
     padding: 0;
     object-fit: contain;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .videocinema1 {
@@ -323,6 +325,84 @@ a {
     align-items: center;
 }
 
+.CV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.btn {
+    background: none;
+    border: 1px solid black;
+    width: 180%;
+    margin: 10px;
+}
+
+.title {
+    text-align: left;
+}
+
+.icon {
+    width: 4%
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(185, 250, 255);
+    cursor: pointer;
+  
+}
+/*Carrousel*/
+
+.tns-controls{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 40px 0px;
+}
+.tns-controls.button{
+    background-color:#E06615;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #fff;     
+}
+
+.tns-outer{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 80%;
+    border-radius: 30px;
+   
+    
+}
+
+.tns-nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 40px 0px;
+           
+}
+.tns-nav-active{
+    background-color: rgba(0, 0, 0, 0.8);
+   
+    border: none;
+    
+}
+.tns-nav .button{
+    width: 8px;
+    height: 24px;
+    border-radius: 12px;
+    border: none;
+    margin: 5px;
+    background-color: #B7C4D6;
+}
+
+
+
 
 /*Version tablette */
 
@@ -366,6 +446,10 @@ a {
     .videocinema {
         width: 60%;
         height: 70%;
+    }
+    .fullscreen-video {
+        width: 70%;
+        
     }
     .partie {
         flex-direction: column;
@@ -445,6 +529,10 @@ a {
     .videocinema {
         width: 80%;
         height: 70%;
+    }
+    .fullscreen-video {
+        width: 100%;
+        
     }
     .videocinema1 {
         width: 80%;
