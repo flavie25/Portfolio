@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Staatliches&display=swap');
 
 /*src7*/
 
 body {
     margin: 0;
-    right: 0;
-    left: 0;
     width: auto;
-    background-color: rgb(211, 247, 255);
+    background-color: rgb(250, 250, 250);
 }
 
 main {
@@ -21,54 +20,137 @@ header {
     left: 0;
 }
 
-footer {}
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
 
 /*header*/
 
 i {
-    color: rgb(185, 250, 255);
+    color: inherit;
 }
 
 i.fab.fa-youtube {
     color: black;
 }
 
-p.headertext {
-    margin: 0;
-    color: rgb(185, 250, 255);
-    font-size: 1.2em;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-}
-
 .menu {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
     height: auto;
     left: 0;
-    text-align: right;
+    top: 0;
+    right: 0;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+    padding: 10px;
+    position: fixed;
+    z-index: 10;
 }
 
 .menu a {
     text-decoration: none;
-    color: rgb(185, 250, 255);
-    margin: 5px 5px 0px 5px;
+    color: rgb(250, 250, 250);
+    margin: 5px 50px 0px 0px;
     font-size: 1.2em;
 }
 
+.navup {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.logonav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logonav i {
+    font-size: 1.4em;
+}
+
 .titre {
+    margin: 100px 0px;
+}
+
+.textaccueil h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 5em;
+    margin: 0;
+}
+
+.textaccueil h2 {
+    font-size: 2em;
+}
+
+.accueilback {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.backgrounddesk {
+    object-fit: cover;
+    width: 100%;
+}
+
+.backgroundmobile {
+    display: none;
+}
+
+.textaccueil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.box {
+    margin-top: 200px;
+}
+
+.box span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -76,8 +158,8 @@ p.headertext {
 
 h1 {
     text-align: center;
-    color: white;
-    font-size: 2.5em;
+    color: black;
+    font-size: 3em;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     margin: 20px 0px 20px 0px;
@@ -87,24 +169,33 @@ h2 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2.5em;
+    margin: 0;
 }
 
 h2.index {
     margin-top: 9px;
     margin-bottom: 30px;
+    font-size: 1.5em;
 }
 
 p {
-    text-align: center;
+    text-align: left;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1em;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+a:hover {
+    color: rgb(255, 163, 87);
 }
 
 .textexplicatif {
@@ -121,6 +212,91 @@ a {
 
 
 /*Index*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.container1 {
+    width: 47%;
+    height: 100%;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image {
+    object-fit: contain;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+    will-change: transform;
+    border-radius: 10px;
+}
+
+.container1:hover .image {
+    transform: scale(1.1);
+}
+
+
+/* Index Hover : Effet sur image*/
+
+.element {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+
+.container1:last-child {
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0;
+}
+
+.element:hover .overlay {
+    opacity: 1;
+}
+
+.element:hover .text {
+    opacity: 1;
+}
+
+
+/*Index
 
 .wrapper {
     display: flex;
@@ -141,10 +317,10 @@ a {
     margin: 0;
     width: 100%;
     height: 100%;
-}
+}*/
 
 
-/* Index Hover : Effet sur image*/
+/* Index Hover : Effet sur image
 
 .element {
     position: relative;
@@ -185,7 +361,7 @@ a {
 
 .element:hover .text {
     opacity: 1;
-}
+}*/
 
 
 /*Site Cinéma et Voyage*/
@@ -197,18 +373,84 @@ a {
     justify-content: space-around;
 }
 
+.mission {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 100px;
+    margin: auto;
+}
+
+.missionpresentation {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.missionimage {
+    width: 100%;
+}
+
+.missiontext {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.infos {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.videocinemaMission {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
 .siteweb {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 93%;
+    margin: auto;
     margin-top: 80px;
     margin-bottom: 20px;
-    justify-content: space-around;
 }
 
 .image11 {
     margin-top: 10px;
     width: 30%;
     height: 100%;
+}
+
+.imagemdm {
+    margin-top: 10px;
+    width: 23%;
+    height: 100%;
+}
+
+.imagecinema {
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+    padding: 0;
+    object-fit: contain;
 }
 
 
@@ -238,12 +480,36 @@ a {
     justify-content: space-around;
     width: auto;
     height: auto;
-    margin: 100px 70px 0 70px;
+    margin: 100px 70px 100px 70px;
+}
+
+
+/*.presentationtext {
+    width: 50%;
+    margin-top: 50px;
+}*/
+
+.pres1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+.infocomp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.competence {
+    display: flex;
 }
 
 .presentationtext {
-    width: 50%;
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .presentationimage {
@@ -308,91 +574,142 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    width: auto;
+    padding: 5px;
+    padding-top: 20px;
 }
 
 .lien a {
     font-size: 1.3em;
-    color: rgb(185, 250, 255);
-    margin: 10px;
+    color: rgb(250, 250, 250);
+    margin: 5px;
 }
 
 .colonne {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.colonnedouble {
+    display: flex;
+}
+
+.colonnedouble .colonne {
+    margin: 10px;
+}
+
+.ligne {
+    width: 5px;
+    border-left: 1px solid rgb(255, 253, 253);
+    height: 80%;
+    margin: auto;
+}
+
+.lignefooter {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 1px solid rgb(255, 253, 253);
+}
+
+.textfooter p {
+    color: rgb(255, 253, 253);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.CV {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.CV {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
 .btn {
     background: none;
-    border: 1px solid black;
-    width: 180%;
+    border: 2px solid #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
     margin: 10px;
+    padding: 5px 25px;
+    font-size: 1em;
+    transition: ease-out 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover {
+    background-color: rgba(250, 250, 250);
+    cursor: pointer;
+}
+
+.btn::before {
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s all ease;
+    opacity: 0;
+    content: "";
+    background-color: rgb(255, 163, 87);
+}
+
+.btn:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .title {
     text-align: left;
+    font-size: 2em;
 }
 
 .icon {
     width: 4%
 }
 
-.btn:hover{
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(185, 250, 255);
-    cursor: pointer;
-  
-}
+
 /*Carrousel*/
 
-.tns-controls{
+.tns-controls {
     display: flex;
     justify-content: space-around;
     margin: 20px 0px 40px 0px;
 }
-.tns-controls.button{
-    background-color:#E06615;
+
+.tns-controls.button {
+    background-color: #E06615;
     border: none;
     width: 50px;
     height: 50px;
     border-radius: 25px;
     padding: 10px;
     font-size: 1.3em;
-    color: #fff;     
+    color: #fff;
 }
 
-.tns-outer{
+.tns-outer {
     margin: auto;
     margin-bottom: 30px;
     width: 80%;
     border-radius: 30px;
-   
-    
 }
 
-.tns-nav{
+.tns-nav {
     display: flex;
     justify-content: center;
     margin: 20px 0px 40px 0px;
-           
 }
-.tns-nav-active{
+
+.tns-nav-active {
     background-color: rgba(0, 0, 0, 0.8);
-   
     border: none;
-    
 }
-.tns-nav .button{
+
+.tns-nav .button {
     width: 8px;
     height: 24px;
     border-radius: 12px;
@@ -400,8 +717,6 @@ a {
     margin: 5px;
     background-color: #B7C4D6;
 }
-
-
 
 
 /*Version tablette */
@@ -449,10 +764,15 @@ a {
     }
     .fullscreen-video {
         width: 70%;
-        
     }
     .partie {
         flex-direction: column;
+    }
+    .textaccueil h1 {
+        font-size: 4em;
+    }
+    .textaccueil h2 {
+        font-size: 2em;
     }
 }
 
@@ -465,16 +785,19 @@ a {
         justify-content: center;
         align-items: center;
         width: 90%;
+        margin-top: 40px;
     }
     .container1 {
         width: 100%;
         height: auto;
+        margin: 5px 0px;
     }
     h1 {
-        font-size: 1.3em;
+        font-size: 1.5em;
+        margin: 0;
     }
     h2 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     p {
         font-size: 0.8em;
@@ -517,6 +840,14 @@ a {
     p.headertext {
         font-size: 0.9em;
     }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navup {
+        display: flex;
+        flex-direction: row;
+    }
     .menu a {
         font-size: 0.9em;
     }
@@ -532,10 +863,46 @@ a {
     }
     .fullscreen-video {
         width: 100%;
-        
     }
     .videocinema1 {
         width: 80%;
         height: 70%;
+    }
+    .infocomp {
+        flex-direction: column;
+    }
+    .presentation {
+        margin: 0;
+    }
+    .titre {
+        margin: 100px 0 0 0;
+    }
+    .pres1 {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+    h2.title {
+        font-size: 1.3em;
+        font-weight: 800;
+    }
+    .textaccueil h1 {
+        font-size: 2em;
+    }
+    .textaccueil h2 {
+        font-size: 1.5em;
+    }
+    .backgrounddesk {
+        display: none;
+    }
+    .backgroundmobile {
+        object-fit: cover;
+        width: 100%;
+        display: block;
+    }
+    .mission {
+        flex-direction: column;
+    }
+    .colonnedouble {
+        flex-direction: column;
     }
 }

@@ -6,27 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dussaillant Flavie | Portfolio | A propos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <a href="apropos.html"><i class="fas fa-user"></i> À propos</a>
-            <a href="index.html">
-                <p class="headertext">
-                    <i class="fas fa-book-open"></i> Portfolio
-                </p>
-            </a>
-            <a href="http://www.linkedin.com/in/flavie-dussaillant-998066182"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <div class="navup">
+                <a href="apropos.html"><i class="fas fa-user"></i> À propos</a>
+                <a href="index.html"><i class="fas fa-book-open"></i> Portfolio</a>
+            </div>
+            <div class="logonav">
+                <a href="https://github.com/flavie25"><i class="fab fa-github"></i></a>
+                <a href="mailto:flavie.dussaillant@mmibordeaux.com"><i class="fas fa-at"></i></a>
+                <a href="http://www.linkedin.com/in/flavie-dussaillant-998066182"><i class="fab fa-linkedin"></i></a>
+            </div>
         </nav>
+    </header>
+
+
+
+    <main>
         <div class="titre">
             <h1>Qui suis-je?</h1>
         </div>
-    </header>
-
-    <main>
         <div class="presentation">
+            <img class="presentationimage" src="./image/photoprofil.png" alt="Photo" />
+
+            <div class="presentationtext">
+                <div class="pres1">
+                    <h2 class="title">Présentation</h2>
+                </div>
+                <div class="pres1">
+                    <p>Je m'appelle <b>Flavie Dussaillant</b> et j'ai 20 ans. Je suis actuellement étudiante en première année de <b>DUT MMI</b> (Métiers du multimédia et de l'internet). Je souhaite devenir développeuse fullstack.</p>
+                </div>
+                <div class="infocomp">
+                    <div class="pres1">
+                        <p><b>Langages et Technologies</b></p>
+                        <div class="competence">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SCSS</li>
+                                <li>JS</li>
+                            </ul>
+                            <ul>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>Jekyll</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pres1">
+                        <p><b>Outils</b></p>
+                        <div class="competence">
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Github</li>
+                                <li>Wamp</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pres1">
+                        <p><b>Design & Autres</b></p>
+                        <div class="competence">
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Premiere Pro</li>
+                                <li>After Effects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="CV">
+                    <a class="CV_a" href="./CV_DUSSAILLANT_Flavie.pdf" target=_blank>
+                        <button class="btn">Mon CV</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="presentation">
             <img class="presentationimage" src="image/photoprofil1.jpg" alt="Photo" />
             <div class="presentationtext">
                 <h2 class="title">Présentation</h2>
@@ -42,7 +104,7 @@
                         <img class="icon" src="image/adobe-photoshop-logo.png" alt="Logo Photoshop" />
                         <img class="icon" src="image/adobe-illustrator.png" alt="Logo Illustrator" />
                         <img class="icon" src="image/after-effects.png" alt="Logo after effects" />
-                        
+
                 </div>
                 <div class="CV">
                     <a class="CV_a" href="CV_DUSSAILLANT_Flavie.pdf" target=_blank>
@@ -52,25 +114,31 @@
             </div>
 
 
-        </div>
+        </div>-->
     </main>
     <footer>
         <div class="lien">
-            <div class="colonne">
-                <a href="index.html"><i class="fas fa-book-open"></i> Portfolio</a>
-                <a href="apropos.html"><i class="fas fa-user"></i> À propos</a>
-                <a href="http://www.linkedin.com/in/flavie-dussaillant-998066182"><i class="fab fa-linkedin"></i> Linkedin</a>
-            </div>
-            <div class="colonne">
-                <a href="sitecinema.html">Site Cinéma le Festival</a>
-                <a href="sitevoyage.html">Site d'article de voyage</a>
-                <a href="cover.html">Cover d'album d'Eminem</a>
-                <a href="motiondesign.html">Motion Design</a>
+            <div class="colonnedouble">
+                <div class="colonne">
+                    <a href="sitecinema.html">Site Cinéma le Festival</a>
+                    <a href="sitevoyage.html">Site d'Article de voyage</a>
+                    <a href="maindanslamain.html">Site Here With You</a>
+                </div>
+                <!--
+                <div class="ligne"></div>
+                <div class="colonne">
+                    <a href="cover.html">Cover d'album d'Eminem</a>
+                    <a href="motiondesign.html">Motion Design</a>
+                </div>
+                -->
             </div>
         </div>
-
+        <div class="lignefooter"></div>
+        <div class="textfooter">
+            <p>Site réalisé par DUSSAILLANT Flavie | 2020</p>
+        </div>
     </footer>
-    
+
 
 </body>
 
