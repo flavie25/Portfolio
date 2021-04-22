@@ -393,6 +393,9 @@ a:hover {
 
 .missionimage {
     width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
 .missiontext {
@@ -726,7 +729,7 @@ a:hover {
         font-size: 2em;
     }
     h2 {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
     .text {
         font-size: 1em;
@@ -756,7 +759,13 @@ a:hover {
     .wrapper {
         margin: auto;
         margin-top: 80px;
+        margin-bottom: 80px;
         width: 90%;
+    }
+    .container1 {
+        width: 85%;
+        height: auto;
+        margin: 10px 0px;
     }
     .videocinema {
         width: 60%;
@@ -774,6 +783,16 @@ a:hover {
     .textaccueil h2 {
         font-size: 2em;
     }
+    .mission {
+        flex-direction: column;
+    }
+    .missionimage {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .titre {
+        margin: 100px 0 0 20px;
+    }
 }
 
 
@@ -786,6 +805,7 @@ a:hover {
         align-items: center;
         width: 90%;
         margin-top: 40px;
+        margin-bottom: 40px;
     }
     .container1 {
         width: 100%;
@@ -794,7 +814,7 @@ a:hover {
     }
     h1 {
         font-size: 1.5em;
-        margin: 0;
+        margin: 0 5px;
     }
     h2 {
         font-size: 1.5em;
@@ -815,10 +835,12 @@ a:hover {
     .image11 {
         width: 90%;
         height: 100%;
+        margin-top: 30px;
     }
     .imagemdm {
-        width: 80%;
+        width: 70%;
         height: 100%;
+        margin-top: 20px;
     }
     .containercover {
         flex-direction: column;
@@ -902,9 +924,6 @@ a:hover {
         object-fit: cover;
         width: 100%;
         display: block;
-    }
-    .mission {
-        flex-direction: column;
     }
     .colonnedouble {
         flex-direction: column;
