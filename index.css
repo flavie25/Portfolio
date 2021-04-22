@@ -731,6 +731,9 @@ a:hover {
     h2 {
         font-size: 1.6em;
     }
+    p {
+        font-size: 0.9em;
+    }
     .text {
         font-size: 1em;
     }
@@ -820,7 +823,7 @@ a:hover {
         font-size: 1.5em;
     }
     p {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     .textexplicatif p {
         width: 100%;
