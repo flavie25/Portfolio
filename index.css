@@ -25,10 +25,11 @@ footer {
 }
 
 
-/*header*/
+/*Navbar*/
 
 i {
     color: inherit;
+    transition: ease-in-out 0.1s;
 }
 
 i.fab.fa-youtube {
@@ -37,7 +38,7 @@ i.fab.fa-youtube {
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.9);
     width: 100vw;
     height: auto;
@@ -46,7 +47,7 @@ i.fab.fa-youtube {
     right: 0;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     z-index: 10;
 }
@@ -54,8 +55,8 @@ i.fab.fa-youtube {
 .menu a {
     text-decoration: none;
     color: rgb(250, 250, 250);
-    margin: 5px 50px 0px 0px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    position: relative;
 }
 
 .navup {
@@ -67,7 +68,12 @@ i.fab.fa-youtube {
 .logonav {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: 1;
+}
+
+.logonav a {
+    margin: 0 10px;
 }
 
 .logonav i {
@@ -78,15 +84,8 @@ i.fab.fa-youtube {
     margin: 100px 10px;
 }
 
-.textaccueil h1 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 5em;
-    margin: 0;
-}
 
-.textaccueil h2 {
-    font-size: 2em;
-}
+/*Accueil*/
 
 .accueilback {
     display: flex;
@@ -116,6 +115,19 @@ i.fab.fa-youtube {
     align-items: center;
     flex-direction: column;
 }
+
+.textaccueil h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 5em;
+    margin: 0;
+}
+
+.textaccueil h2 {
+    font-size: 2em;
+}
+
+
+/*Flèches Accueil*/
 
 .box {
     margin-top: 200px;
@@ -151,6 +163,39 @@ i.fab.fa-youtube {
     100% {
         opacity: 0;
     }
+}
+
+
+/*Animation navbar*/
+
+.cl-effect-4 a {
+    padding: 0 0 5px;
+}
+
+.cl-effect-4 a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 163, 87);
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+    height: 1px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
 }
 
 
@@ -192,22 +237,16 @@ a {
     color: black;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+    transition: ease-in-out 0.2s;
 }
 
 a:hover {
     color: rgb(255, 163, 87);
+    transition: ease-in-out 0.2s;
 }
 
-.textexplicatif {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    margin: 25px 15px 40px 15px;
-}
-
-.textexplicatif p {
-    text-align: center;
-    width: 60%;
+.colonne a:hover {
+    color: rgb(255, 163, 87);
 }
 
 
@@ -294,74 +333,6 @@ a:hover {
 .element:hover .text {
     opacity: 1;
 }
-
-
-/*Index
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-top: 100px;
-    width: 80%;
-}
-
-.container1 {
-    width: 45%;
-    height: auto;
-}
-
-.image {
-    object-fit: contain;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}*/
-
-
-/* Index Hover : Effet sur image
-
-.element {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    opacity: 0;
-}
-
-.text {
-    position: absolute;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.5em;
-    text-align: center;
-    opacity: 0;
-}
-
-.element:hover .overlay {
-    opacity: 1;
-}
-
-.element:hover .text {
-    opacity: 1;
-}*/
 
 
 /*Site Cinéma et Voyage*/
@@ -486,12 +457,6 @@ a:hover {
     margin: 100px 70px 100px 70px;
 }
 
-
-/*.presentationtext {
-    width: 50%;
-    margin-top: 50px;
-}*/
-
 .pres1 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
@@ -529,27 +494,6 @@ a:hover {
 
 
 /*Vidéos*/
-
-.videocinema {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 70%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.fullscreen-video {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    object-fit: contain;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
 
 .videocinema1 {
     display: flex;
@@ -590,15 +534,14 @@ a:hover {
 .colonne {
     display: flex;
     justify-content: left;
-    flex-direction: column;
+}
+
+.colonne a {
+    margin: 0 30px;
 }
 
 .colonnedouble {
     display: flex;
-}
-
-.colonnedouble .colonne {
-    margin: 10px;
 }
 
 .ligne {
@@ -624,7 +567,11 @@ a:hover {
 .CV {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-self: flex-start;
+}
+
+.btnfooter {
+    display: flex;
 }
 
 .btn {
@@ -796,6 +743,9 @@ a:hover {
     .titre {
         margin: 100px 0 0 20px;
     }
+    .colonne {
+        flex-direction: column;
+    }
 }
 
 
@@ -872,19 +822,22 @@ a:hover {
     .menu {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: auto;
     }
     .navup {
         display: flex;
         flex-direction: row;
     }
     .menu a {
-        font-size: 0.9em;
+        font-size: 1em;
+        margin: 5px 10px;
     }
     .lien {
         flex-direction: column;
     }
     .lien a {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .videocinema {
         width: 80%;
