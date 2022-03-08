@@ -407,6 +407,14 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.websitelink{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1em;
+}
+
 .image11 {
     margin-top: 10px;
     width: 30%;
@@ -425,6 +433,12 @@ a:hover {
     margin-top: 15px;
     padding: 0;
     object-fit: contain;
+}
+
+.imgMobile{
+    margin-top: 10px;
+    width: 20%;
+    height: 100%;
 }
 
 
@@ -795,6 +809,11 @@ a:hover {
     }
     .imagemdm {
         width: 70%;
+        height: 100%;
+        margin-top: 20px;
+    }
+    .imgMobile{
+        width: 60%;
         height: 100%;
         margin-top: 20px;
     }
